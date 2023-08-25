@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BaiMau/SpringMVCTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BaiMau/spring-save-username/wbds-2023-spring-save-username" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Demo/DemoCRUD_AJAX" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Demo/DemoServlet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Demo/ThymeleafTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/QuanLyKhachHang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[BaiTap]GioHang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]Crud_Ajax/Crud_Ajax_BackEnd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]QuanLyDanhSachKhachHangUsingHibernate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]QuanLyDuLieuKhachHangUsingThymeleaf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]QuanLyKhachHangUsing_Hibernate&amp;JPA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]SpringGreeting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]Spring_JPA_StoreProceduce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]TaoUngDungBlog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]TimeZoneGradle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]UngDungKiemTraEmailGradle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]ViewCountDemoUsingSession" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/[ThucHanh]spring-mvc-shoppingCart" vcs="Git" />
+  </component>
+</project>

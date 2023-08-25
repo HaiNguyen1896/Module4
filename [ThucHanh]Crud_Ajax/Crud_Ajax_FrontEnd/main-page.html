@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Danh sách tài khoản </h2>
+
+    <div>
+        <button type="button" id="createButton" class="btn btn-primary" data-toggle="modal" data-target="#modalCreate">Create</button>
+        <input placeholder="Find" id="keyword">
+        <button onclick="findByName()">Tìm</button>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody id="show">
+
+        </tbody>
+    </table>
+</div>
+
+<!-- create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="id" placeholder="nhập id"><br>
+                <input id="username" placeholder="nhập username"><br>
+                <input id="password" placeholder="nhập password"><br>
+                <input id="idRole" placeholder="nhập idrole"><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="create()" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Edit-->
+<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="idE" readonly placeholder="nhập id"><br>
+                <input id="usernameE" placeholder="nhập name"><br>
+                <input id="passwordE" placeholder="nhập price"><br>
+                <input id="idRoleE" placeholder="nhập img"><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="edit()" data-dismiss="modal">Edit</button>
+                <button type="button" class="btn btn-primary" onclick="deleteA(choosenNumber)" data-dismiss="modal">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--&lt;!&ndash;DeleteModal&ndash;&gt;-->
+<!--<div class="modal" tabindex="-1" role="dialog" id="modalDelete">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title">Modal title</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <input id="idD" readonly placeholder="nhập id"><br>-->
+<!--                <input id="usernameD" placeholder="nhập name"><br>-->
+<!--                <input id="passwordD" placeholder="nhập price"><br>-->
+<!--                <input id="idRoleD" placeholder="nhập img"><br>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-primary" id="IDDelete" onclick="deleteA(choosenNumber)" data-dismiss="modal">Đồng ý xóa</button>-->
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+</html>
+<script src="Login.js"></script>
+<script src="mainJS.js"></script>
